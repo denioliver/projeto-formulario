@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@keyframes suavisar {
+    from {
+        opacity: 0;
+        }
+    to {
+        opacity: 1;
+        }
+
+}
+@keyframes movex {
+    from {
+        opacity: 0;
+        transform: translatey(35%);
+        }
+    to {
+        opacity: 1;
+        transform: translatey(0%);
+        }
+
+}
+@keyframes movey {
+    from {
+        opacity: 0;
+        transform: translatey(-35%);
+        }
+    to {
+        opacity: 1;
+        transform: translatey(0%);
+        }
+
+}
+@keyframes up {
+    from{
+        transform: translatey(0px);
+    }
+    to{
+        transform: translatey(-1000px);
+    }
+    
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-image: linear-gradient(to right, rgb(24, 19, 19), rgb(36, 33, 44));
+    height: 100vh;
+    width: 100vw;
+    
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+} 
+section#conteudo{
+    background-color: rgb(207, 194, 194);
+    width: 300px;
+    height: 580px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: suavisar;
+    animation-duration: 2s;
+    z-index: 10;
+    transition: .3s;
+}
+div#logo{
+    padding: 10px;
+    text-align: center;
+    animation-name: movey;
+    animation-duration: 3s;
+    
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(48, 48, 49);
+}
+p{
+    padding: 7px;
+}
+input{
+    background-color: rgb(207, 194, 194);
+    border: 0 ;
+    
+}
+input.caixa{
+    width: 99%;
+    padding: 3.1px;
+    border-radius:;
+    outline: 0px;
+    box-shadow: 0px 1px 0px black;
+    
+}
+fieldset{
+    border-radius: 15px;
+    outline: 0px;
+    border: 0;
+    width: 80%;
+    margin: auto;
+   
+}
+legend{
+    text-align: center;
+    
+}
+form{
+    font-size: .97em;
+    padding: 5px;
+    animation-name: movex;
+    animation-duration: 3s;
+}
+p#enviar{
+    padding: 6px;
+    text-align: center;
+}
+button:hover{
+    background-color: rgb(36, 30, 30);
+    transition: .3s;
+    color: white;
+    transform: translate(-3px, -3px);
+    cursor: pointer;
+}
+button{
+    padding: 6px;
+    border-radius: 7px;
+    box-shadow: 1.5px 1.5px 5px rgba(0, 0, 0, 0.63);
+    width: 150px;
+    outline: 0px;
+    border: 0;
+    background-color:  rgb(65, 58, 58);
+    color:  rgb(207, 194, 194);
+    font-size: 1em;
+   
+   
+}
+ul.quadrados > li {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.103);
+    display: block;
+    position: fixed;
+
+    animation: up 3s 3s infinite;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    section#conteudo{
+        width: 600px;
+        height: 580px;
+        overflow: hidden;
+        transition: .5s;
+        
+        }
+    div#imagem{
+        background-image: url("../img/fundo2.jpg");
+        background-size: cover;
+        background-position: top left -150px;
+        position: absolute;
+        transition: .5s;
+        float: left;
+        width: 40%;
+        height: 100%;
+        
+    }
+    section#formulario{
+        float: right;
+        width: 60%;
+        transition: .5s;
+    }
+
+
+}
+@media screen and (min-width: 993px){
+    section#conteudo{
+        width: 900px;
+        height: 580px;
+        overflow: hidden;
+        transition: .5s;
+        
+        }
+    div#imagem{
+        background-image: url("../img/fundo2.jpg");
+        background-size: cover;
+        background-position: top left -150px;
+        position: absolute;
+        transition: .5s;
+        float: left;
+        width: 40%;
+        height: 100%;
+        
+    }
+    section#formulario{
+        float: right;
+        width: 60%;
+        transition: .5s;
+    }
+
+
+}

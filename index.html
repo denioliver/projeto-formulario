@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto formulário</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <main>
+        
+        <section id="conteudo">
+            <div id="imagem">
+                
+            </div>
+            <section id="formulario">
+                <div id="logo">
+                    <img src="img/deni_logo2.png" alt="">
+                </div>
+                <form action="#" method="post" autocomplete="off">
+                    <fieldset>
+                        <legend><h1>Teste meu formulário</h1></legend>
+                        <p>
+                            <label for="nome">Nome completo:</label> <br>
+                            <input type="text" name="nome" id="nome" class="caixa" required>
+                        </p>
+                        <p>
+                            Sexo: 
+                            <input type="radio" name="M-F" id="masculino"> 
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" name="M-F" id="feminino">
+                            <label for="feminino">Feminino</label>
+                        </p>
+                        <P>
+                            <label for="email">E-mail:</label> <br>
+                            <input type="email" name="email" id="email" class="caixa" required placeholder="exemplo@...">
+                        </P>
+                        <p>
+                            <label for="telefone">Telefone:</label> <br>
+                            <input type="tel" name="telefone" id="telefone" class="caixa" required placeholder="(xx)x.xxxx-xxxx">
+                        </p>
+                        <p>
+                            <label for="senha">Senha:</label> <br>
+                            <input type="password" name="senha" id="senha" class="caixa" required minlength="8">
+                        </p>
+                        <p>
+                            <label for="csenha">Confirmação de senha:</label> <br>
+                            <input type="password" name="csenha" id="csenha" class="caixa" required minlength="8">
+                        </p>
+                        <p id="enviar">
+                            <button type="submit">Enviar</button>
+                        </p>
+                    </fieldset>
+
+                </form>
+            </section>
+        </section>
+    </main>
+        <ul class="quadrados">
+            <li></li>
+        </ul>
+
+        <script src="js/formulario.js">
+            
+        </script>
+</body>
+</html>
